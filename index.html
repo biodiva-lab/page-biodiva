@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioDiVa Lab — (bio)diversity in the Anthropocene</title>
+<meta name="description" content="BioDiVa Lab is a decentralized, collaborative research network for biodiversity science across borders.">
+<link rel="icon" type="image/png" href="assets/logo-chameleon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="position:relative;overflow:hidden">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-rainbow"></div>
+  <div class="container header-inner">
+    <a href="#home" class="brand" data-close-menu>
+      <img src="assets/logo-chameleon.png" alt="BioDiVa Lab chameleon" class="brand-logo">
+      <span class="brand-text">
+        <span class="brand-name">
+          <span class="letter">B</span><span class="letter">I</span><span class="letter">O</span><span class="letter">D</span><span class="letter">I</span><span class="letter">V</span><span class="letter">A</span><span class="letter">&nbsp;Lab</span>
+        </span>
+        <small class="brand-sub" data-i18n="brandSub">Laboratory of (bio)diversity in the Anthropocene</small>
+      </span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+      <a href="#research" class="nav-link" data-i18n="nav.research">Research</a>
+      <a href="#how" class="nav-link" data-i18n="nav.how">How it works</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" id="lang-en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" id="lang-pt" aria-pressed="false">PT</button>
+      </div>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span class="menu-toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile" hidden>
+    <a href="#about" class="nav-link" data-close-menu data-i18n="nav.about">About</a>
+    <a href="#research" class="nav-link" data-close-menu data-i18n="nav.research">Research</a>
+    <a href="#how" class="nav-link" data-close-menu data-i18n="nav.how">How it works</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-blob hero-blob--1 fb"></div>
+  <div class="hero-blob hero-blob--2 fb"></div>
+  <div class="hero-blob hero-blob--3"></div>
+  <div class="hero-inner">
+    <h1 class="hero-title">
+      <span data-i18n="heroBefore">A decentralized model for collaborative </span><span class="hero-title-highlight" data-i18n="heroColored">biodiversity science</span><span data-i18n="heroAfter"> across borders</span>
+    </h1>
+    <div class="hero-cta-wrap">
+      <a href="#about" class="btn btn--primary"><span data-i18n="heroCta">Learn more</span> <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section--about">
+  <div class="container container--narrow">
+    <span class="rv eyebrow" data-i18n="labels.about">About the lab</span>
+    <p class="rv about-lead" data-i18n="about.p1">The BioDivA Lab is a decentralized and collaborative research network designed to transform how biodiversity science is produced, shared, and applied.</p>
+    <p class="rv about-body" data-i18n="about.p2">The lab connects researchers across institutions, countries, and career stages to co-develop projects in ecology, evolution, and conservation.</p>
+  </div>
+</section>
+
+<!-- ============ MISSION + VALUES ============ -->
+<section id="mission" class="section--mission">
+  <div class="container">
+    <div class="rv mission-card">
+      <span class="eyebrow" data-i18n="labels.mission">Mission</span>
+      <blockquote class="mission-quote" data-i18n="mission">To promote a diverse, inclusive, and healthier scientific community, compromised with open, ethical, and transparent science production and the construction of a collaborative and transdisciplinary network to fight the complex challenges from the Anthropocene.</blockquote>
+    </div>
+
+    <div id="values" class="values-block">
+      <h2 class="rv section-title" data-i18n="labels.values">Values</h2>
+      <div class="values-grid">
+        <div class="rv value-card"><span class="value-swatch"></span><span class="value-label" data-i18n="values.0">Intersectionality and social sensitivity</span></div>
+        <div class="rv value-card"><span class="value-swatch"></span><span class="value-label" data-i18n="values.1">Global Collaboration and Transdisciplinarity</span></div>
+        <div class="rv value-card"><span class="value-swatch"></span><span class="value-label" data-i18n="values.2">Innovation and Creativity</span></div>
+        <div class="rv value-card"><span class="value-swatch"></span><span class="value-label" data-i18n="values.3">Education and Science Outreach</span></div>
+        <div class="rv value-card"><span class="value-swatch"></span><span class="value-label" data-i18n="values.4">Inclusion and Equal Opportunities</span></div>
+        <div class="rv value-card"><span class="value-swatch"></span><span class="value-label" data-i18n="values.5">Compromise with and Equal and Sustainable World</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH LINES ============ -->
+<section id="research" class="section--research">
+  <div class="container">
+    <h2 class="rv section-title" data-i18n="labels.research">Research lines</h2>
+    <div class="research-list">
+      <div class="rv research-item">
+        <span class="research-num">01</span>
+        <span class="research-divider" aria-hidden="true"></span>
+        <p class="research-text" data-i18n="research.0">The Impacts of human activities on natural and human systems</p>
+        <span class="research-arrow" aria-hidden="true">→</span>
+      </div>
+      <div class="rv research-item">
+        <span class="research-num">02</span>
+        <span class="research-divider" aria-hidden="true"></span>
+        <p class="research-text" data-i18n="research.1">Science Governance and Diplomacy</p>
+        <span class="research-arrow" aria-hidden="true">→</span>
+      </div>
+      <div class="rv research-item">
+        <span class="research-num">03</span>
+        <span class="research-divider" aria-hidden="true"></span>
+        <p class="research-text" data-i18n="research.2">Ethnobiology and Society-Nature relationship: a transdisciplinary approach to environmental conservation</p>
+        <span class="research-arrow" aria-hidden="true">→</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW DOES IT WORK ============ -->
+<section id="how" class="section--how">
+  <div class="container">
+    <h2 class="rv section-title" data-i18n="labels.how">How does it works?</h2>
+    <div class="rv principles-row">
+      <span class="principle-chip" data-i18n="principles.0">Flexibility</span>
+      <span class="principle-chip" data-i18n="principles.1">Communication</span>
+      <span class="principle-chip" data-i18n="principles.2">Support</span>
+      <span class="principle-chip" data-i18n="principles.3">Respectful environment</span>
+      <span class="principle-chip" data-i18n="principles.4">Passion</span>
+      <span class="principle-chip" data-i18n="principles.5">Humanized mentorship</span>
+    </div>
+    <div class="rv how-flow">
+      <span class="how-arrow" aria-hidden="true">↓</span>
+      <span class="how-hub"><img src="assets/logo-chameleon.png" alt="BioDiVa Lab"><span data-i18n="howHub">Collaborative science</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVERYONE WINS ============ -->
+<section id="win" class="section--win">
+  <div class="container container--wide">
+    <div class="win-grid">
+      <div class="rv">
+        <p class="win-statement" data-i18n="win.structure">This structure enables the integration of diverse expertise and perspectives while promoting scientific inclusivity, training, and equitable participation in research.</p>
+        <div class="win-note">
+          <img src="assets/logo-chameleon.png" alt="">
+          <span data-i18n="win.note">To build a more inclusive Science, we need diverse mentor networks.</span>
+        </div>
+      </div>
+      <div class="rv outcomes-grid">
+        <div class="outcome-card"><span class="outcome-arrow" aria-hidden="true">↗</span><p class="outcome-label" data-i18n="win.outcomes.0">Better work and learning experiences</p></div>
+        <div class="outcome-card"><span class="outcome-arrow" aria-hidden="true">↗</span><p class="outcome-label" data-i18n="win.outcomes.1">New research perspectives</p></div>
+        <div class="outcome-card"><span class="outcome-arrow" aria-hidden="true">↗</span><p class="outcome-label" data-i18n="win.outcomes.2">Better opportunities for all people involved</p></div>
+        <div class="outcome-card"><span class="outcome-arrow" aria-hidden="true">↗</span><p class="outcome-label" data-i18n="win.outcomes.3">Encouraging more people to work with science</p></div>
+        <div class="win-banner"><span aria-hidden="true">★</span> <span data-i18n="win.center">EVERYONE WINS!</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NETWORK ============ -->
+<section id="network" class="section--network">
+  <div class="container container--wide">
+    <span class="rv eyebrow" style="justify-content:center" data-i18n="labels.network">Collaborative network</span>
+    <span class="rv countries-label" data-i18n="labels.countries">Across the world</span>
+    <div class="rv countries-list" id="countries-list">
+      <!-- populated by script.js from the countries data table (flags are language-independent) -->
+    </div>
+    <h2 class="rv section-title" data-i18n="team.title">The people of the network</h2>
+
+    <div class="rv team-filters" role="group" aria-label="Filter by research line">
+      <button type="button" class="filter-btn active" data-filter="all" data-i18n="team.filterAll">All</button>
+      <button type="button" class="filter-btn" data-filter="impactos" style="--line-color:#C8F5C2" data-i18n="team.lines.0">Human Impacts</button>
+      <button type="button" class="filter-btn" data-filter="governanca" style="--line-color:#B8D4FF" data-i18n="team.lines.1">Science Governance</button>
+      <button type="button" class="filter-btn" data-filter="etnobiologia" style="--line-color:#A99ACB" data-i18n="team.lines.2">Ethnobiology</button>
+    </div>
+
+    <div class="rv team-carousel">
+      <button type="button" class="team-nav team-nav--prev" id="team-prev" aria-label="Previous page">‹</button>
+
+      <div class="team-grid" id="team-grid">
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/aida-p-giozza.jpeg" alt="Aída P. Giozza">
+          <span class="team-id">
+            <span class="team-name">Aída P. Giozza</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.aida-p-giozza.title">Effects of climate change on South American pit vipers</p>
+            <p class="team-desc" data-i18n="team.people.aida-p-giozza.desc">I study the effects of climate change on South American pit vipers through ecological niche modeling.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.aida-p-giozza.affiliation">Undergraduate program in Biodiversity, Institute of Biosciences, Humanities and Exact Sciences, São Paulo State University (UNESP), São José do Rio Preto campus, SP, Brazil. Laboratory of Ecology and Evolution (LEEv), Butantan Institute, São Paulo, SP, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/5679280624975086" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0001-5335-2067" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Aida-Giozza?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/ana-leticia-dos-santos-lima.jpg" alt="Ana Letícia dos Santos Lima">
+          <span class="team-id">
+            <span class="team-name">Ana Letícia dos Santos Lima</span>
+            <span class="team-role" data-i18n="team.people.ana-leticia-dos-santos-lima.role">Doutorando (phd student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.ana-leticia-dos-santos-lima.title">Bees in urban areas: the landscape and its influence on community structure</p>
+            <p class="team-desc" data-i18n="team.people.ana-leticia-dos-santos-lima.desc">To analyze the influence of the urban landscape on bee communities and on the structure of bee-plant interaction networks.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.ana-leticia-dos-santos-lima.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.ana-leticia-dos-santos-lima.formacao">Bachelor&#x27;s degree in Biological Sciences, Master&#x27;s degree in Ecology and Evolution</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/4197943525173558" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0008-0922-9131" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos governanca etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/andre-nunes.jpeg" alt="André Nunes">
+          <span class="team-id">
+            <span class="team-name">André Nunes</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="governanca" data-i18n="team.lines.1"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.andre-nunes.title">Conservation Solutions for Herpetofauna in the Pan-Amazon: Climate Emergency and the Future of Species</p>
+            <p class="team-desc" data-i18n="team.people.andre-nunes.desc">This research proposes practical and integrated conservation solutions to protect pan-Amazonian herpetofauna biodiversity from environmental collapses caused by the climate crisis.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.andre-nunes.affiliation">Research Fellow (DTI-B/CNPq); Laboratory of Ecology and Conservation (LABECO), Biological Sciences Institute, Federal University of Pará (UFPA), Belém, Pará, Brazil</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/3018884414240210" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0005-0313-7066" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Andre-Luiz-Nunes" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/beatriz-hormanseder.jpg" alt="Beatriz Hörmanseder">
+          <span class="team-id">
+            <span class="team-name">Beatriz Hörmanseder</span>
+            <span class="team-role" data-i18n="team.people.beatriz-hormanseder.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-desc" data-i18n="team.people.beatriz-hormanseder.desc">Uses three-dimensional methodologies for research, curation, and digital preservation of geopaleontological heritage, integrating 3D technologies into science communication in Paleontology.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.beatriz-hormanseder.formacao">Bachelor&#x27;s degree in Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/2464211948213980" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0002-9206-9915" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Beatriz-Marinho-Hoermanseder" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/camila-sant-anna.jpg" alt="Camila Sant&#x27;Anna">
+          <span class="team-id">
+            <span class="team-name">Camila Sant&#x27;Anna</span>
+            <span class="team-role" data-i18n="team.people.camila-sant-anna.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/9950152670514888" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0003-0879-5410" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/caroline-tito.png" alt="Caroline Tito">
+          <span class="team-id">
+            <span class="team-name">Caroline Tito</span>
+            <span class="team-role" data-i18n="team.people.caroline-tito.role">Doutorando (phd student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.caroline-tito.title">Structure of solitary bee and wasp communities (Hymenoptera: Aculeata) nesting in pre-existing cavities, their functional groups and the properties of antagonistic relationships, characterizing this community along an urbanization gradient</p>
+            <p class="team-desc" data-i18n="team.people.caroline-tito.desc">To analyze how urbanization affects the structure, functions, and ecological relationships of solitary bee and wasp communities that use trap-nests.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.caroline-tito.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/6467831483476821" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0002-6348-7528" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Caroline-Garcia-4?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/charles-vinicius-de-jesus-braga.jpeg" alt="Charles Vinícius de Jesus Braga">
+          <span class="team-id">
+            <span class="team-name">Charles Vinícius de Jesus Braga</span>
+            <span class="team-role" data-i18n="team.people.charles-vinicius-de-jesus-braga.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.charles-vinicius-de-jesus-braga.affiliation">Department of Biological Sciences, Santa Cruz State University, Ilhéus, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.charles-vinicius-de-jesus-braga.formacao">Undergraduate student in Biological Sciences (in progress)</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/4728153267448393" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Charles-Braga-2" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/damares-soares.jpeg" alt="Damares Soares">
+          <span class="team-id">
+            <span class="team-name">Damares Soares</span>
+            <span class="team-role" data-i18n="team.people.damares-soares.role">Doutorando (phd student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.damares-soares.title">Impact of climate change on Atlantic Forest birds of prey: refuge, migration, and predation</p>
+            <p class="team-desc" data-i18n="team.people.damares-soares.desc">How climate change impacts, or may impact, birds of prey.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.damares-soares.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.damares-soares.formacao">Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/7927370416570785" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/denis-bruno-santos-marques-nunes.webp" alt="Denis Bruno Santos Marques Nunes">
+          <span class="team-id">
+            <span class="team-name">Denis Bruno Santos Marques Nunes</span>
+            <span class="team-role" data-i18n="team.people.denis-bruno-santos-marques-nunes.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.denis-bruno-santos-marques-nunes.title">To be defined</p>
+            <p class="team-desc" data-i18n="team.people.denis-bruno-santos-marques-nunes.desc">To be defined</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.denis-bruno-santos-marques-nunes.affiliation">None at the moment</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/5804098899345657" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0003-2821-4839" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Denis-Nunes-2?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/fabiola-vieira.png" alt="Fabíola Vieira">
+          <span class="team-id">
+            <span class="team-name">Fabíola Vieira</span>
+            <span class="team-role" data-i18n="team.people.fabiola-vieira.role">Doutorando (phd student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.fabiola-vieira.title">Viral zoonotic potential in bats from the Belo Horizonte Zoonosis Control Center and Maxakali cosmoperception: intersections among One Health, conservation, and ethnozoology</p>
+            <p class="team-desc" data-i18n="team.people.fabiola-vieira.desc">My research focuses on the interfaces between One Health, conservation, and ethnozoology, exploring the relationships between bats, the Maxakali people, and society at large.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.fabiola-vieira.affiliation">Postgraduate Program in Animal Science; School of Veterinary Medicine, Federal University of Minas Gerais (UFMG), Belo Horizonte, Minas Gerais, Brazil. Research focus: One Health and conservation, Indigenous communities, and Chiroptera.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/7446329794073333" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0003-2536-8592" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/fernanda-melo-gomes.jpeg" alt="Fernanda Melo Gomes">
+          <span class="team-id">
+            <span class="team-name">Fernanda Melo Gomes</span>
+            <span class="team-role" data-i18n="team.people.fernanda-melo-gomes.role">Pesquisador(a) de pós-doutorado (postdoctoral scholar)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.fernanda-melo-gomes.title">Ethnobotany of traditional communities in Brazil: strategies facing climate change from the perspective of basic education</p>
+            <p class="team-desc" data-i18n="team.people.fernanda-melo-gomes.desc">My research investigates the ethnobotanical knowledge and practices of traditional communities, seeking to understand their relationships with biodiversity and climate change and to contribute to their appreciation within basic education.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.fernanda-melo-gomes.affiliation">Postdoctoral Researcher in Ethnobotany; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/3750113871758181" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0002-4213-6577" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Fernanda-Melo-Gomes" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/hugo-andrade.jpeg" alt="Hugo Andrade">
+          <span class="team-id">
+            <span class="team-name">Hugo Andrade</span>
+            <span class="team-role" data-i18n="team.people.hugo-andrade.role">Pesquisador(a) de pós-doutorado (postdoctoral scholar)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.hugo-andrade.title">Too hot to hop: thermal ecophysiology of amphibians under climate change scenarios</p>
+            <p class="team-desc" data-i18n="team.people.hugo-andrade.desc">I seek to understand the determining factors for the occurrence and distribution of reptiles across different scales and climate scenarios.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.hugo-andrade.affiliation">Junior Postdoctoral Researcher, Federal University of Sergipe, Sergipe, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/7858493033167907" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0003-4951-6094" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Hugo-Andrade-4?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/joao-pedro-ramos-couto.jpg" alt="João Pedro Ramos Couto">
+          <span class="team-id">
+            <span class="team-name">João Pedro Ramos Couto</span>
+            <span class="team-role" data-i18n="team.people.joao-pedro-ramos-couto.role">IC (undergraduate research)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.joao-pedro-ramos-couto.title">Routes and Refuges: Predicting the Future of Shorebirds under Climate Change</p>
+            <p class="team-desc" data-i18n="team.people.joao-pedro-ramos-couto.desc">To define climatic refuges for migratory shorebirds through niche modeling.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.joao-pedro-ramos-couto.affiliation">Undergraduate student in Biology Teaching; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.joao-pedro-ramos-couto.formacao">Undergraduate student in Biology Teaching</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/juliana-moraes.png" alt="Juliana Moraes">
+          <span class="team-id">
+            <span class="team-name">Juliana Moraes</span>
+            <span class="team-role" data-i18n="team.people.juliana-moraes.role">phd student</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.juliana-moraes.title">Effects of climate changes on migratory birds</p>
+            <p class="team-desc" data-i18n="team.people.juliana-moraes.desc">My research aims to understand how different environmental pressures affect the physiology, ecology, and survival of migratory birds in their various biological aspects.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.juliana-moraes.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil | Visitor researcher, Ruđer Bošković Institut, Zagreb, Croatia</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/2126679773072067" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0003-3221-4145" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/karen-nascimento.png" alt="Karen Nascimento">
+          <span class="team-id">
+            <span class="team-name">Karen Nascimento</span>
+            <span class="team-role" data-i18n="team.people.karen-nascimento.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.karen-nascimento.title">The cost of life beneath the surface: ecophysiology and ecological niche modeling of amphisbaenians (Squamata: Amphisbaenia) under future climate change</p>
+            <p class="team-desc" data-i18n="team.people.karen-nascimento.desc">To understand the possible impacts of climate change on neotropical fossorial herpetofauna.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.karen-nascimento.affiliation">Undergraduate student in Biological Sciences; Institute of Biological and Health Sciences, Federal University of Alagoas, Maceió, Alagoas, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.karen-nascimento.formacao">Bachelor&#x27;s degree in Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/2340411539670111" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0001-8619-3389" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Karen-Lais" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/lavinia-conceicao-ribeiro.jpg" alt="Lavínia Conceição Ribeiro">
+          <span class="team-id">
+            <span class="team-name">Lavínia Conceição Ribeiro</span>
+            <span class="team-role" data-i18n="team.people.lavinia-conceicao-ribeiro.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.lavinia-conceicao-ribeiro.title">Impact of Wind Farm Installation on Herpetofauna: Community Analysis in Caatinga Environments in Northeastern Brazil.</p>
+            <p class="team-desc" data-i18n="team.people.lavinia-conceicao-ribeiro.desc">To investigate the impacts of wind farm installation on the structure and composition of the lizard community in the Caatinga.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lavinia-conceicao-ribeiro.affiliation">Licensed in Biological Sciences and undergraduate student in Biological Sciences at the Federal University of Bahia (UFBA). Collaborator at the Laboratory of (Bio)diversity in the Anthropocene (BioDIVA), Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lavinia-conceicao-ribeiro.formacao">Licensed in Biological Sciences from the Federal University of Bahia.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/0559845662781314" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/lucca-izaguirres-souza.jpeg" alt="Lucca Izaguirres Souza">
+          <span class="team-id">
+            <span class="team-name">Lucca Izaguirres Souza</span>
+            <span class="team-role" data-i18n="team.people.lucca-izaguirres-souza.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lucca-izaguirres-souza.affiliation">Bachelor&#x27;s degree in Biological Sciences - Santa Cruz State University, Ilhéus, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lucca-izaguirres-souza.formacao">Undergraduate student in Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/4810105915555021" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Lucca-Izaguirres-Souza" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/marcelle-heliopolis.jpg" alt="Marcelle Heliópolis">
+          <span class="team-id">
+            <span class="team-name">Marcelle Heliópolis</span>
+            <span class="team-role" data-i18n="team.people.marcelle-heliopolis.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.marcelle-heliopolis.title">The impacts of climate change on the ecophysiology of anuran species of the Atlantic Forest in Alagoas, Brazil</p>
+            <p class="team-desc" data-i18n="team.people.marcelle-heliopolis.desc">To investigate the impact of average temperatures on anurans of the Atlantic Forest in the Pernambuco Endemism Center.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.marcelle-heliopolis.affiliation">Bachelor&#x27;s degree in Biological Sciences, Institute of Biological and Health Sciences, Federal University of Alagoas, Maceió, Alagoas, Brazil</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/1637625151108297" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0003-3709-1260" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Marcelle-Heliopolis-De-Oliveira?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="governanca etnobiologia" data-primary="governanca">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/maria-amazonas-mura.jpeg" alt="Maria Amazonas Mura">
+          <span class="team-id">
+            <span class="team-name">Maria Amazonas Mura</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="governanca" data-i18n="team.lines.1"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.maria-amazonas-mura.title">The formative process of healing specialists among peoples undergoing ethnic resurgence in the Lower Tapajós region</p>
+            <p class="team-desc" data-i18n="team.people.maria-amazonas-mura.desc">Understanding the formation of healing specialists in Indigenous communities.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.maria-amazonas-mura.affiliation">Postgraduate program in anthropology; Faculty of Philosophy and Human Sciences at UFBA, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/1957658518947070" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/my-orcid?orcid=0009-0007-3482-2888" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Maria-Amazonas-2" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/marina-sunshine-souza-lobo-dos-santos.jpg" alt="Marina Sunshine Souza Lobo dos Santos">
+          <span class="team-id">
+            <span class="team-name">Marina Sunshine Souza Lobo dos Santos</span>
+            <span class="team-role" data-i18n="team.people.marina-sunshine-souza-lobo-dos-santos.role">Mestrando (masters student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.marina-sunshine-souza-lobo-dos-santos.title">Phylogenetic and therapeutic patterns of medicinal plants used by traditional Brazilian communities: A systematic review</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.marina-sunshine-souza-lobo-dos-santos.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.marina-sunshine-souza-lobo-dos-santos.formacao">Biologist</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/7661592995690730" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0009-6536-022X" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Marina-Sunshine-Dos-Santos-2" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="governanca" data-primary="governanca">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/murillo-medeiros-carvalho.jpg" alt="Murillo Medeiros Carvalho">
+          <span class="team-id">
+            <span class="team-name">Murillo Medeiros Carvalho</span>
+            <span class="team-role" data-i18n="team.people.murillo-medeiros-carvalho.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="governanca" data-i18n="team.lines.1"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.murillo-medeiros-carvalho.title">Mapping trans strategies for the climate crisis</p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/1820234519390236" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0003-2028-0305" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Murillo-Carvalho-2" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/nolga-elia.jpg" alt="Nolga Eliã">
+          <span class="team-id">
+            <span class="team-name">Nolga Eliã</span>
+            <span class="team-role" data-i18n="team.people.nolga-elia.role">Mestrando (masters student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.nolga-elia.title">Potential of mammal functional diversity as an indicator of ecological integrity in Atlantic Forest fragments in southern Bahia.</p>
+            <p class="team-desc" data-i18n="team.people.nolga-elia.desc">To assess the potential of medium and large mammal functional diversity as an indicator of ecological integrity, examining whether it varies with proximity to protected areas, habitat structure, and carbon stock, in Atlantic Forest fragments of southern Bahia.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.nolga-elia.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.nolga-elia.formacao">Bachelor&#x27;s degree in Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/2758012488124585" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0001-6558-4612" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Nolga-Santos?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/patricia-neves-pereira.jpeg" alt="Patrícia Neves Pereira">
+          <span class="team-id">
+            <span class="team-name">Patrícia Neves Pereira</span>
+            <span class="team-role" data-i18n="team.people.patricia-neves-pereira.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.patricia-neves-pereira.affiliation">Basic Education Teacher at the Wilson David Domingues Municipal Educational Center and at the Zuleide Freire de Abreu State Full-Time School, Jacaraci, Bahia, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="lattes.cnpq.br/6952994044543684" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/rafaela-da-silva-lampa.jpeg" alt="Rafaela da Silva Lampa">
+          <span class="team-id">
+            <span class="team-name">Rafaela da Silva Lampa</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.rafaela-da-silva-lampa.title">Parental behavior of spinner dolphins from the Fernando de Noronha Archipelago, PE, Brazil.</p>
+            <p class="team-desc" data-i18n="team.people.rafaela-da-silva-lampa.desc">To investigate the mother-calf behavioral repertoire in the spinner dolphin population of Fernando de Noronha, Brazil.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.rafaela-da-silva-lampa.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/1081965395125481" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0001-9443-0957" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos governanca etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/ricardo-santos-magalhaes.jpg" alt="Ricardo Santos Magalhães">
+          <span class="team-id">
+            <span class="team-name">Ricardo Santos Magalhães</span>
+            <span class="team-role" data-i18n="team.people.ricardo-santos-magalhaes.role">Mestrando (masters student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="governanca" data-i18n="team.lines.1"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.ricardo-santos-magalhaes.title">Thermal physiology and impacts of climate change on populations of Corallus hortulana Linnaeus, 1758 (Squamata: Boidae) across different biomes.</p>
+            <p class="team-desc" data-i18n="team.people.ricardo-santos-magalhaes.desc">My research aims to investigate the effects of climate change on an arboreal boa species.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.ricardo-santos-magalhaes.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/1834146468848177" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0001-7477-2191" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Ricardo-Magalhaes-6" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/silvana-silva-dos-santos.jpeg" alt="Silvana Silva dos Santos">
+          <span class="team-id">
+            <span class="team-name">Silvana Silva dos Santos</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.silvana-silva-dos-santos.title">Global impacts of Sonneratia apetala (Lythraceae) invasion and the threat to Brazilian mangroves</p>
+            <p class="team-desc" data-i18n="team.people.silvana-silva-dos-santos.desc">To research the ecological effects of the invasive behavior of S. apetala in mangroves around the world and in Brazil.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.silvana-silva-dos-santos.affiliation">Postgraduate program in ecology: Application, Theory, and Values; Biology Institute, Federal University of Bahia</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/8204580917137513" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/thamyres-da-costa-freitas.jpg" alt="Thamyres da Costa Freitas">
+          <span class="team-id">
+            <span class="team-name">Thamyres da Costa Freitas</span>
+            <span class="team-role" data-i18n="team.people.thamyres-da-costa-freitas.role">Doutorando (phd student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.thamyres-da-costa-freitas.title">Ethnospecies and carbon sequestration: an ecological approach to climate change mitigation</p>
+            <p class="team-desc" data-i18n="team.people.thamyres-da-costa-freitas.desc">To assess the contribution of ethnospecies in future emissions scenarios and to consolidate strategies for protecting and strengthening their role in combating climate change.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.thamyres-da-costa-freitas.affiliation">PhD in Climate Change and Sustainable Development Policies; Faculty of Sciences, University of Lisbon, Lisbon, Portugal.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=63ECF444B00A22EB6CF68B6430406D3A#" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0001-6261-3166" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/thieres-almeida.jpg" alt="Thieres Almeida">
+          <span class="team-id">
+            <span class="team-name">Thieres Almeida</span>
+            <span class="team-role" data-i18n="team.people.thieres-almeida.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.thieres-almeida.title">Computational tools for the conservation and restoration of the Caatinga</p>
+            <p class="team-desc" data-i18n="team.people.thieres-almeida.desc">To develop and apply computational tools and diverse data in innovative ways to solve conservation and restoration problems in the Caatinga.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.thieres-almeida.affiliation">Postgraduate program in ecology and conservation; Universidade Federal de Sergipe, São Cristóvão, Sergipe, Brazil</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/1498677441582358" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0001-7371-8070" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Thieres-Almeida?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/vitoria-ribeiro.jpg" alt="Vitória Ribeiro">
+          <span class="team-id">
+            <span class="team-name">Vitória Ribeiro</span>
+            <span class="team-role" data-i18n="team.people.vitoria-ribeiro.role">Doutorando (phd student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.vitoria-ribeiro.title">Effectiveness of protected areas in safeguarding threatened parrots in Brazil</p>
+            <p class="team-desc" data-i18n="team.people.vitoria-ribeiro.desc">To assess the protective potential that protected areas offer to Brazilian parrot species threatened with extinction, and to determine which environmental factors shape their past, current, and future distribution.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.vitoria-ribeiro.affiliation">Graduate student in the Legal Amazon Biodiversity and Biotechnology Network (Bionorte) at the Maranhão State University, São Luís, Maranhão, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.vitoria-ribeiro.formacao">Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/3413410089723850" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0003-3102-8770" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/lais-doria.jpg" alt="Laís Dória">
+          <span class="team-id">
+            <span class="team-name">Laís Dória</span>
+            <span class="team-role" data-i18n="team.people.lais-doria.role">IC (undergraduate research)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lais-doria.affiliation">Undergraduate student in Biological Sciences at the Federal University of Bahia, Salvador, Bahia, Brazil</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lais-doria.formacao">Undergraduate student in Biological Sciences - Bachelor&#x27;s degree</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/0968141079855629" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/lucas-araujo-faria.webp" alt="Lucas Araújo Faria">
+          <span class="team-id">
+            <span class="team-name">Lucas Araújo Faria</span>
+            <span class="team-role" data-i18n="team.people.lucas-araujo-faria.role">IC (undergraduate research)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.lucas-araujo-faria.title">Climate Impact on Mangrove Plants: a systematic review</p>
+            <p class="team-desc" data-i18n="team.people.lucas-araujo-faria.desc">A systematic review of climate impacts on selected mangrove plant genera.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lucas-araujo-faria.affiliation">Bachelor&#x27;s degree in Biological Sciences; Institute of Biology, Federal University of Bahia, Salvador, Bahia, Brazil</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lucas-araujo-faria.formacao">First academic degree</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/0107968674440145" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/beatriz-de-jesus-garcia.jpeg" alt="Beatriz de Jesus Garcia">
+          <span class="team-id">
+            <span class="team-name">Beatriz de Jesus Garcia</span>
+            <span class="team-role" data-i18n="team.people.beatriz-de-jesus-garcia.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.beatriz-de-jesus-garcia.title">Ecological niche modeling for Diphylla ecaudata in the Atlantic Forest under climate change scenarios.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.beatriz-de-jesus-garcia.formacao">Undergraduate student in Biological Sciences - UFBA</span></p>
+          </div>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/daniel-araujo.jpg" alt="Daniel Araujo">
+          <span class="team-id">
+            <span class="team-name">Daniel Araujo</span>
+            <span class="team-role" data-i18n="team.people.daniel-araujo.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-desc" data-i18n="team.people.daniel-araujo.desc">Impact of noise caused by wind farms on wildlife and humans.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.daniel-araujo.affiliation">Renova Mundo Soluções Ambientais</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.daniel-araujo.formacao">Biology</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://www.linkedin.com/in/daniel-araujo-4a338a46?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos governanca etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/lana-resende-de-almeida.webp" alt="Lana Resende de Almeida">
+          <span class="team-id">
+            <span class="team-name">Lana Resende de Almeida</span>
+            <span class="team-role" data-i18n="team.people.lana-resende-de-almeida.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="governanca" data-i18n="team.lines.1"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.lana-resende-de-almeida.formacao">Bachelor&#x27;s degree in Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/2219000067036592" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/luis-filipe-ribeiro-santos.jpg" alt="Luís Filipe Ribeiro Santos">
+          <span class="team-id">
+            <span class="team-name">Luís Filipe Ribeiro Santos</span>
+            <span class="team-role" data-i18n="team.people.luis-filipe-ribeiro-santos.role">IC (undergraduate research)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.luis-filipe-ribeiro-santos.title">Ancestral and contemporary ethnozoology of anurans: past and future for conservation.</p>
+            <p class="team-desc" data-i18n="team.people.luis-filipe-ribeiro-santos.desc">To use ethnozoology, through the different human relationships with anurans, as a way to raise awareness and encourage anuran conservation.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.luis-filipe-ribeiro-santos.affiliation">Teaching degree in Biological Sciences; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.luis-filipe-ribeiro-santos.formacao">Biology</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=AAC9572C30850078DCC95DD0A72D0682#" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos governanca etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/helena-rachel-da-mota-araujo.jpg" alt="Helena Rachel da Mota Araujo">
+          <span class="team-id">
+            <span class="team-name">Helena Rachel da Mota Araujo</span>
+            <span class="team-role" data-i18n="team.people.helena-rachel-da-mota-araujo.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="governanca" data-i18n="team.lines.1"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.helena-rachel-da-mota-araujo.affiliation">Senior lecturer at the State University of Southwest Bahia, Jequié Campus; Graduate Program in Ethnic Relations and Contemporaneity (PPGREC) and Graduate Program in Genetics, Biodiversity and Conservation (PPGGBC), Bahia, Brazil</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.helena-rachel-da-mota-araujo.formacao">Bachelor&#x27;s degree in Biological Sciences - UFBA</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/3281542106397287" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0001-6665-8292" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/soliene-teixeira-dos-santos.jpg" alt="Soliene Teixeira dos Santos">
+          <span class="team-id">
+            <span class="team-name">Soliene Teixeira dos Santos</span>
+            <span class="team-role" data-i18n="team.people.soliene-teixeira-dos-santos.role">IC (undergraduate research)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.soliene-teixeira-dos-santos.affiliation">Undergraduate program in general biology: Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.soliene-teixeira-dos-santos.formacao">Teaching degree in Biological Sciences</span></p>
+          </div>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/gessica-f-assis.jpg" alt="Géssica F. Assis">
+          <span class="team-id">
+            <span class="team-name">Géssica F. Assis</span>
+            <span class="team-role" data-i18n="team.people.gessica-f-assis.role">IC (undergraduate research)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.gessica-f-assis.affiliation">Bachelor&#x27;s degree in Biological Sciences; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.gessica-f-assis.formacao">Biological Sciences - UFBA (in progress)</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/1922707148284049" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <span class="team-avatar">PC</span>
+          <span class="team-id">
+            <span class="team-name">Pedro Vieira de Carvalho</span>
+            <span class="team-role" data-i18n="team.people.pedro-vieira-de-carvalho.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.pedro-vieira-de-carvalho.title">The inclusion of trans people in advertising campaigns: production of meaning, symbolic power, and the limits of representation in Brazilian advertising</p>
+            <p class="team-desc" data-i18n="team.people.pedro-vieira-de-carvalho.desc">To analyze the representation of transgender people in Brazilian advertising campaigns and understand how this representation has contributed to shaping social perceptions of this population, as well as to processes of exclusion and marginalization.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.pedro-vieira-de-carvalho.affiliation">Postgraduate Program in Communication (PPGCOM), Rio de Janeiro State University (UERJ). Research areas: gender, representation, transgender identities, media, and advertising. Rio de Janeiro, Rio de Janeiro, Brazil.</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/1496986571812856" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos governanca" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/deivide-almeida-dos-santos.jpeg" alt="Deivide Almeida dos Santos">
+          <span class="team-id">
+            <span class="team-name">Deivide Almeida dos Santos</span>
+            <span class="team-role" data-i18n="team.people.deivide-almeida-dos-santos.role">IC (undergraduate research)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="governanca" data-i18n="team.lines.1"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.deivide-almeida-dos-santos.title">Climate Impact on Mangrove Plants: a Systematic Review</p>
+            <p class="team-desc" data-i18n="team.people.deivide-almeida-dos-santos.desc">To assess, through a systematic literature review, the impacts of climate change on mangrove plants, synthesizing the available scientific evidence.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.deivide-almeida-dos-santos.affiliation">Undergraduate student in Biological Sciences; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.deivide-almeida-dos-santos.formacao">Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=B89884D78D13FC3E74E6BBEB61D1FB10#" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0000-2416-4091" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/matheus-augusto-de-azevedo.jpg" alt="Matheus Augusto de Azevedo">
+          <span class="team-id">
+            <span class="team-name">Matheus Augusto de Azevedo</span>
+            <span class="team-role" data-i18n="team.people.matheus-augusto-de-azevedo.role">IC (undergraduate research)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.matheus-augusto-de-azevedo.title">Ethnobotany on Social Media: Indigenous Peoples from Bahia in Action</p>
+            <p class="team-desc" data-i18n="team.people.matheus-augusto-de-azevedo.desc">My research aims to understand which Indigenous communities in Bahia share their knowledge about plants on the internet, and which plants these are.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.matheus-augusto-de-azevedo.affiliation">Federal University of Bahia</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.matheus-augusto-de-azevedo.formacao">Bachelor&#x27;s degree in Biological Sciences from the Federal University of Bahia</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/8566718861693695" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0004-8273-4215" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/mateus-santos.jpg" alt="Mateus Santos">
+          <span class="team-id">
+            <span class="team-name">Mateus Santos</span>
+            <span class="team-role" data-i18n="team.people.mateus-santos.role">Doutorando (phd student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.mateus-santos.title">Between resilience and extinction: Ecophysiology and tolerance limits of Caatinga Tropiduridae.</p>
+            <p class="team-desc" data-i18n="team.people.mateus-santos.desc">My research aims to predict the future effects of global warming on the Caatinga by analyzing climate change impacts on tropidurid lizards in this morphoclimatic domain.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.mateus-santos.affiliation">Postgraduate program in ecology and conservation; Department of Biology, Federal University of Sergipe, São Cristóvão, Sergipe, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.mateus-santos.formacao">Degree in Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/0956795445882792" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0006-6357-0993" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/maria-eduarda-curie-menezes-melo.jpg" alt="Maria Eduarda Curie Menezes Melo">
+          <span class="team-id">
+            <span class="team-name">Maria Eduarda Curie Menezes Melo</span>
+            <span class="team-role" data-i18n="team.people.maria-eduarda-curie-menezes-melo.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.maria-eduarda-curie-menezes-melo.affiliation">Waiting for the Ecotav process to open in order to enroll in the master&#x27;s program and become a graduate advisee</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.maria-eduarda-curie-menezes-melo.formacao">Teaching degree in Biology</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/9422506731743519" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="etnobiologia" data-primary="etnobiologia">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/thame-ferreira.jpg" alt="Thame Ferreira">
+          <span class="team-id">
+            <span class="team-name">Thame Ferreira</span>
+            <span class="team-role" data-i18n="team.people.thame-ferreira.role">Mestrando (masters student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.thame-ferreira.title">The Museum of Ceará Culture and ecology: toward an eco-art-educational approach.</p>
+            <p class="team-desc" data-i18n="team.people.thame-ferreira.desc">The research investigates, through an ecosophical articulation between ecology, art, culture, and museum education, how eco-art-education emerged from a pragmatic experience through the Educational Center linked to the Museum of Ceará Culture (Fortaleza, Ceará).</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.thame-ferreira.affiliation">Postgraduate program in ecology: theories, application, and values; Biology Institute, Federal University of Bahia, Salvador, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.thame-ferreira.formacao">Bachelor&#x27;s degree in Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/2422809912573587" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/andres-felipe-arana-aguilar.jpg" alt="Andres Felipe Arana Aguilar">
+          <span class="team-id">
+            <span class="team-name">Andres Felipe Arana Aguilar</span>
+            <span class="team-role" data-i18n="team.people.andres-felipe-arana-aguilar.role">Mestrando (masters student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.andres-felipe-arana-aguilar.title">Tissue extraction protocol for sea turtle hatchlings</p>
+            <p class="team-desc" data-i18n="team.people.andres-felipe-arana-aguilar.desc">This research aims to standardize an efficient and minimally invasive protocol for collecting biological tissue samples from sea turtle hatchlings, ensuring sample integrity for laboratory analyses and the safety of the specimens.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.andres-felipe-arana-aguilar.affiliation">Postgraduate program in zoology; State University of Santa Cruz, Ilhéus, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.andres-felipe-arana-aguilar.formacao">Bachelor of Science - Universidad del Valle</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/8411401170536289" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0005-8936-8171" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Andres-Arana-Aguilar?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/ju-neres.jpeg" alt="Ju Neres">
+          <span class="team-id">
+            <span class="team-name">Ju Neres</span>
+            <span class="team-role" data-i18n="team.people.ju-neres.role">Doutorando (phd student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.ju-neres.title">Assessment of chlorophyll levels in the mangroves of Baía de Todos os Santos: an environmental diagnosis</p>
+            <p class="team-desc" data-i18n="team.people.ju-neres.desc">To assess mangrove health using in situ data and satellite imagery.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.ju-neres.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.ju-neres.formacao">Teaching degree in Biology</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/7690902742448859" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0001-8886-4206" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Juliana-Neres?ev=hdr_xprf" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/maria-nogueira.jpeg" alt="Maria Nogueira">
+          <span class="team-id">
+            <span class="team-name">Maria Nogueira</span>
+            <span class="team-role" data-i18n="team.people.maria-nogueira.role">Mestrando (masters student)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.maria-nogueira.title">Bat community structure (Mammalia, Chiroptera) in areas of Boqueirão da Onça, Sento-Sé, Bahia</p>
+            <p class="team-desc" data-i18n="team.people.maria-nogueira.desc">Chiroptera ecology</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.maria-nogueira.affiliation">Postgraduate program in ecology: theories, applications, and values; Biology Institute, Federal University of Bahia, Salvador, Bahia, Brazil.</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.maria-nogueira.formacao">Biologist</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="https://lattes.cnpq.br/9880564228636973" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0009-0003-5877-9803" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/iris-amati-martins.jpg" alt="Iris Amati Martins">
+          <span class="team-id">
+            <span class="team-name">Iris Amati Martins</span>
+            <span class="team-role" data-i18n="team.people.iris-amati-martins.role">Collaborating researcher</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+            </span>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.iris-amati-martins.affiliation">Collaborating Researcher on the project &quot;What Can Soundscapes Reveal About Biodiversity?&quot;; Center for Natural and Human Sciences, Federal University of ABC, São Paulo, Brazil</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.iris-amati-martins.formacao">PhD and Master&#x27;s in Ecology of Aquatic and Terrestrial Ecosystems from USP, and Bachelor&#x27;s degree in Biological Sciences from UNESP</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/2314280883939992" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+            <a class="team-link" href="https://orcid.org/0000-0002-7544-5050" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#A6CE39"/><text x="10" y="13.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">iD</text></svg><span>ORCID</span></a>
+            <a class="team-link" href="https://www.researchgate.net/profile/Iris-Amati-Martins" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#00CCBB"/><text x="10" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#fff">RG</text></svg><span>ResearchGate</span></a>
+          </span>
+        </div>
+      </article>
+      <article class="team-card" data-line="impactos etnobiologia" data-primary="impactos">
+        <div class="team-avatar-strip">
+          <img class="team-avatar-photo" src="assets/team/karoline-agostinho.jpeg" alt="Karoline Agostinho">
+          <span class="team-id">
+            <span class="team-name">Karoline Agostinho</span>
+            <span class="team-role" data-i18n="team.people.karoline-agostinho.role">Pesquisador(a) de pós-doutorado (postdoctoral scholar)</span>
+          </span>
+        </div>
+        <div class="team-body">
+          <div class="team-research">
+            <span class="team-tags">
+              <span class="team-tag" data-line-tag="impactos" data-i18n="team.lines.0"></span>
+              <span class="team-tag" data-line-tag="etnobiologia" data-i18n="team.lines.2"></span>
+            </span>
+            <p class="team-research-title" data-i18n="team.people.karoline-agostinho.title">Artisanal fishing and Climate Change: sustainability of the activity integrated with the Blue Economy and Ocean Literacy on the coast of Espírito Santo</p>
+            <p class="team-desc" data-i18n="team.people.karoline-agostinho.desc">The proposal investigates the socioeconomic and sociocultural challenges of artisanal fishing in Espírito Santo in the face of coastal uses, climate change, and public policy failures, seeking to integrate traditional knowledge, Ocean Literacy, and the Blue Economy to support actions that ensure the activity&#x27;s continuity.</p>
+          </div>
+          <div class="team-credentials">
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.karoline-agostinho.affiliation">Postdoctoral researcher in the Graduate Program in Environmental Oceanography - Federal University of Espírito Santo; Human Ecology of the Ocean Research Group</span></p>
+            <p class="team-meta"><span class="team-meta-icon" aria-hidden="true">•</span><span data-i18n="team.people.karoline-agostinho.formacao">Biological Sciences</span></p>
+          </div>
+          <span class="team-links">
+            <a class="team-link" href="http://lattes.cnpq.br/4708753129556967" target="_blank" rel="noopener"><svg class="link-icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18" rx="4" fill="#1B4332"/><text x="10" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">L</text></svg><span>Lattes</span></a>
+          </span>
+        </div>
+      </article>
+      </div>
+
+      <button type="button" class="team-nav team-nav--next" id="team-next" aria-label="Next page">›</button>
+    </div>
+    <div class="team-page-indicator" id="team-page-indicator">1 / 1</div>
+    <div class="team-empty" id="team-empty" hidden data-i18n="team.empty">No researcher found for this filter.</div>
+  </div>
+</section>
+
+<!-- ============ COORDINATION ============ -->
+<section id="coord" class="section--coord">
+  <div class="container container--mid">
+    <h2 class="rv section-title" data-i18n="labels.coord">Coordination</h2>
+    <div class="rv coord-card">
+      <div class="coord-photo-wrap">
+        <span class="coord-photo-badge" aria-hidden="true"></span>
+        <img src="assets/photo-coordinator.jpg" alt="Dra Luisa Maria Diele-Viegas" class="coord-photo">
+      </div>
+      <div>
+        <span class="coord-role" data-i18n="coord.role">Coordination</span>
+        <h3 class="coord-name">Dra Luisa Maria Diele-Viegas</h3>
+        <p class="coord-bio" data-i18n="coord.bio">Biologist and researcher in ecology, conservation and biodiversity in the Anthropocene, and an advocate for open, inclusive and diverse science. She founded and coordinates the BioDiVa Lab and its collaborative research network.</p>
+        <a href="http://lattes.cnpq.br/9032844663306862" target="_blank" rel="noopener" class="btn btn--cta"><span data-i18n="coord.cv">View Lattes CV</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <div class="marquee-wrap rv">
+      <div class="marquee-track">
+        <img src="assets/photo-fieldwork.jpg" alt="Fieldwork">
+        <img src="assets/photo-network.jpg" alt="Collaborative network">
+        <img src="assets/photo-diplomacy.jpg" alt="Science diplomacy">
+        <img src="assets/photo-fieldwork.jpg" alt="" aria-hidden="true">
+        <img src="assets/photo-network.jpg" alt="" aria-hidden="true">
+        <img src="assets/photo-diplomacy.jpg" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section--contact">
+  <div class="container">
+    <h2 class="rv contact-title" data-i18n="contact.title">Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:luisa.mviegas@gmail.com" class="rv contact-link">
+        <span class="contact-icon" aria-hidden="true">✉</span>
+        <span class="contact-label">luisa.mviegas@gmail.com</span>
+      </a>
+      <a href="https://www.instagram.com/biodiva.lab/" target="_blank" rel="noopener" class="rv contact-link">
+        <span class="contact-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F2A1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+        <span class="contact-label">@biodiva.lab</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- rainbow waves -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+    <path d="M0,30 C360,5 540,55 720,40 C900,25 1080,60 1440,32 L1440,150 L0,150 Z" fill="#FF8086"></path>
+    <path d="M0,55 C360,30 540,80 720,62 C900,44 1080,82 1440,55 L1440,150 L0,150 Z" fill="#FFB588"></path>
+    <path d="M0,78 C360,54 540,102 720,84 C900,66 1080,104 1440,78 L1440,150 L0,150 Z" fill="#ECE889"></path>
+    <path d="M0,100 C360,78 540,122 720,106 C900,90 1080,124 1440,100 L1440,150 L0,150 Z" fill="#7FEBAF"></path>
+    <path d="M0,120 C360,100 540,140 720,124 C900,110 1080,140 1440,120 L1440,150 L0,150 Z" fill="#00D2E1"></path>
+  </svg>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container container--wide">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo-chameleon.png" alt="BioDiVa Lab" class="footer-logo">
+        <span class="footer-brand-name">BioDiVa Lab</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#research" data-i18n="nav.research">Research</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#network" data-i18n="nav.network">Network</a>
+        <a href="#coord" data-i18n="nav.coord">Coordination</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-rule"></div>
+    <div class="footer-bottom">
+      <small data-i18n="footer.line">BioDiVa Lab — (bio)diversity in the Anthropocene.</small>
+      <a href="mailto:luisa.mviegas@gmail.com">luisa.mviegas@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<div class="photo-lightbox" id="photo-lightbox" hidden>
+  <button type="button" class="photo-lightbox-close" id="photo-lightbox-close" aria-label="Close">&times;</button>
+  <img class="photo-lightbox-img" id="photo-lightbox-img" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
